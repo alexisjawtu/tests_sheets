@@ -1,0 +1,98 @@
+        name              & c++ name    & fig:five_1 & Ex1_Type1 & Ex2_Type2 & Ex3_Type1 \\ 
+    1 & Folder            &             & ./output   &           &           &           \\ 
+    2 & Wafer type        & wafer_type  & 1          & 1         & 2         & 1         \\
+    3 & Scaling           & scale       & 10         & 20        & 20        & 10        \\
+    4 & Diameter D        & R           & 20         & 300       & 300       & 20        \\
+    5 & Thickness t       & t           & 3000       & 500       & 500       & 3000      \\ 
+    6 & r_C       or x    & probe_x     & 0          & 0         & 0         & 0         \\ 
+    7 & theta     or y    & probe_y     & 0          & 0         & 0         & 0         \\ 
+    8 & Pitch h           & pitch       & 5          & 1         & 1         & 5         \\ 
+    9 & Pitch error A, B  &             & 0          & 0         & 0         & 0         \\
+    10& Pitch error B, C  &             & 0          & 0         & 0         & 0         \\ 
+    11& Pitch error C, D  &             & 0          & 0         & 0         & 0         \\ 
+    12& theta_p           & theta       & 0          & 0         & 0         & 0         \\ 
+    13& Profile Ceil 1    &             & 2750       & *         & *         & *         \\
+    14& Profile Floor 1   &             & 250        & *         & *         & *         \\
+    15& Profile Width 1   &             & 916.67     & *         & *         & *         \\
+    16& Profile Ceil 2    &             & 2500       & *         & *         & *         \\
+    17& Profile Floor 2   &             & 500        & *         & *         & *         \\
+    18& Profile Width 2   &             & 750        & *         & *         & *         \\
+    19& Profile Ceil 3    &             & 2250       & *         & *         & *         \\
+    20& Profile Floor 3   &             & 750        & *         & *         & *         \\
+    21& Profile Width 3   &             & 583.33     & *         & *         & *         \\
+    22& Profile Ceil 4    &             & 2000       & *         & *         & *         \\
+    23& Profile Floor 4   &             & 1000       & *         & *         & *         \\
+    24& Profile Width 4   &             & 416.67     & *         & *         & *         \\
+    25& Profile Ceil 5    &             & 1750       & *         & *         & *         \\
+    26& Profile Floor 5   &             & 1250       & *         & *         & *         \\
+    27& Profile Width 5   &             & 250        & *         & *         & *         \\
+    28& length of cut 1   & L1          & *          & *         & 60        & *         \\
+    29& lenght of cut 2   & L2          & *          & *         & *         & *         \\
+    30& alpha (cuts 1, 2) & angle_diff  & *          & *         & *         & *         \\
+
+
+
+         name              & c++ name    & Ex4_Type1  
+    1  & Folder            &             &            
+    2  & Wafer type        & wafer_type  & 1         
+    3  & Scaling           & scale       & 10        
+    4  & Diameter D        & R           & 20        
+    5  & Thickness t       & t           & 3000       
+    6  & r_C       or x    & probe_x     & 0          
+    7  & theta     or y    & probe_y     & 0          
+    8  & Pitch h           & pitch       & 5          
+    9  & Pitch error A, B  &             & 0         
+    10 & Pitch error B, C  &             & 0          
+    11 & Pitch error C, D  &             & 0          
+    12 & theta_p           & theta       & 45          
+    13 & Profile Ceil 1    &             & *         
+    14 & Profile Floor 1   &             & *         
+    15 & Profile Width 1   &             & *         
+    16 & Profile Ceil 2    &             & *         
+    17 & Profile Floor 2   &             & *         
+    18 & Profile Width 2   &             & *         
+    19 & Profile Ceil 3    &             & *         
+    20 & Profile Floor 3   &             & *         
+    21 & Profile Width 3   &             & *         
+    22 & Profile Ceil 4    &             & *         
+    23 & Profile Floor 4   &             & *         
+    24 & Profile Width 4   &             & *         
+    25 & Profile Ceil 5    &             & *         
+    26 & Profile Floor 5   &             & *         
+    27 & Profile Width 5   &             & *         
+    28 & length of cut 1   & L1          & *         
+    29 & lenght of cut 2   & L2          & *         
+    30 & alpha (cuts 1, 2) & angle_diff  & *         
+
+% Examples of execution with Complete commands
+
+% Ex1_Type1
+
+% - Scale parameter 20
+% - Wafer diameter, Thickness: (300 mm, 500 mu m)
+% - Sensor center position: (r_c, theta) = (0 mm, 0 deg)
+% - Standard probe distance, Probe angle: (h, theta_p) = (1 mm, 0 deg)
+% - Distance error of the probes: (0 mu m,0 mu m,0 mu m)
+%   command:  ./wafer ./ 1 20 300 500 0 0 1 0 0 0 0
+
+% Ex2_Type2
+
+% - Scale parameter: 20
+% - Wafer diameter, Thickness: (300 mm, 500 mu m)
+% - Sensor center position: (r_c, theta) = (0 mm, 0 deg)
+% - Length  of the orientation flat L = 60
+% - Standard probe dostaence, Probe angle: (h,theta_p) = (1 mm,0 deg)
+% - Distance error of the probes: (0 mu m,0 mu m ,0 mu m)
+%   command:  ./wafer ./ 2 20 300 500 60 0 0 1 0 0 0 0
+
+
+
+
+
+
+
+
+
+
+
+
