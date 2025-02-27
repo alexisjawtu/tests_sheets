@@ -1,33 +1,6 @@
-               name              & c++ name    & Ex4_Type1     & c++ name    & figure_five_1 & Ex1_Type1 & Ex2_Type2 & Ex3_Type1 \\ 
-          1  & Folder            &             &               &             & ./output      &           &           &           \\ 
-          2  & Wafer_type        & wafer_type  & 1             & wafer_type  & 1             & 1         & 2         & 1         \\
-          3  & Scaling           & scale       & 10            & scale       & 10            & 20        & 20        & 10        \\
-          4  & Diameter_D        & R           & 20            & R           & 20            & 300       & 300       & 20        \\
-          5  & Thickness_t       & t           & 3000          & t           & 3000          & 500       & 500       & 3000      \\ 
-(r_C)     6  & probe_x           & probe_x     & 0             & probe_x     & 0             & 0         & 0         & 0         \\ 
-(theta)   7  & probe_y           & probe_y     & 0             & probe_y     & 0             & 0         & 0         & 0         \\ 
-          8  & Pitch_h           & pitch       & 5             & pitch       & 5             & 1         & 1         & 5         \\ 
-          12 & theta_p           & theta       & 45            & theta       & 0             & 0         & 0         & 0         \\ 
-          9  & Pitch_error_A_B   &             & 0             &             & 0             & 0         & 0         & 0         \\
-          10 & Pitch_error_B_C   &             & 0             &             & 0             & 0         & 0         & 0         \\ 
-          11 & Pitch_error_C_D   &             & 0             &             & 0             & 0         & 0         & 0         \\ 
-          28 & length_of_cut_1   & L1          & -1            & L1          & -1            & -1        & 60        & -1        \\
-          29 & lenght_of_cut_2   & L2          & -1            & L2          & -1            & -1        & -1        & -1        \\
-          30 & alpha_cuts_1_2_   & angle_diff  & -1            & angle_diff  & -1            & -1        & -1        & -1        \\
-          13 & Profile_Ceil_1_   &             & *             &             & 2750          & *         & *         & *         \\
-          14 & Profile_Floor_1   &             & *             &             & 250           & *         & *         & *         \\
-          15 & Profile_Width_1   &             & *             &             & 916.67        & *         & *         & *         \\
-          16 & Profile_Ceil_2_   &             & *             &             & 2500          & *         & *         & *         \\
-          17 & Profile_Floor_2   &             & *             &             & 500           & *         & *         & *         \\
-          18 & Profile_Width_2   &             & *             &             & 750           & *         & *         & *         \\
-          19 & Profile_Ceil_3_   &             & *             &             & 2250          & *         & *         & *         \\
-          20 & Profile_Floor_3   &             & *             &             & 750           & *         & *         & *         \\
-          21 & Profile_Width_3   &             & *             &             & 583.33        & *         & *         & *         \\
-          22 & Profile_Ceil_4_   &             & *             &             & 2000          & *         & *         & *         \\
-          23 & Profile_Floor_4   &             & *             &             & 1000          & *         & *         & *         \\
-          24 & Profile_Width_4   &             & *             &             & 416.67        & *         & *         & *         \\
-          25 & Profile_Ceil_5_   &             & *             &             & 1750          & *         & *         & *         \\
-          26 & Profile_Floor_5   &             & *             &             & 1250          & *         & *         & *         \\
-          27 & Profile_Width_5   &             & *             &             & 250           & *         & *         & *         \\
-
-id test_name pair(var_name, cpp_name) folder wafer_type ...
+id,test_name,folder_MISSING,wafer_type,scale,user_diameter_for_wafer,user_thickness_of_inner_wafer,probe_x,probe_y,pitch,theta,pitch_err_AB_MISSING,pitch_err_BC_MISSING,pitch_err_CD_MISSING,L1,L2,angle_between_cuts,map_params_ceil_1,map_params_floor_1,map_params_width_1,map_params_ceil_2,map_params_floor_2,map_params_width_2,map_params_ceil_3,map_params_floor_3,map_params_width_3,map_params_ceil_4,map_params_floor_4,map_params_width_4,map_params_ceil_5,map_params_floor_5,map_params_width_5
+1,Ex4_Type1,./,1,10,20,3000,0,0,5,45,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+2,figure_five_1,./,1,10,20,3000,0,0,5,0,0,0,0,-1,-1,-1,2750,250,916.67,2500,500,750,2250,750,583.33,2000,1000,416.67,1750,1250,250
+3,Ex1_Type1,./,1,20,300,500,0,0,1,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+4,Ex2_Type2,./,2,20,300,500,0,0,1,0,0,0,0,60,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+5,Ex3_Type1,./,1,10,20,3000,0,0,5,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1

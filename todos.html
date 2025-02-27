@@ -1,92 +1,135 @@
-<b>CONTINUE HERE:</b> terminar la tabla en doc/tests/sample.tex. Sacar la columna Unit,
-poner columnas: code var name | english documentation name | figurita.jpg | otra_figurita.jpg | ...
-y despu'es deber'ia haber una columna por cada ejemplo  -----^ 
-</br>
-</br>
-</br>
+<b>Objetivo: la primera version de la wafer sale con la busqueda enumerativa de los 
+nodos de empalme con el perfil.</b>
+
+<b>CONTINUE HERE</b> 
 
 <ol>
+    <li> 
+         seguir con graficar test2
+         hacer que el graficar vaya mostrando lo que hace en cada linea
+                > import ...
+                > from ... import ...
+    </li>
+    <li> elegir un metodo ordenado para dibujar tests sin repetir acciones 
+         y dejarlo en uso.
+    </li>
+    <li>hacer un repo de tests exclusivamente con su graficador .py</li>
+</ol>
 
-<li>
-	how did I manage to glue the profile to the inner part in
-	Japan, to make the drawings? Was it by hand? Was it gathering the indices from the code?
+</br>
+</br>
+</br>
+
+
+<b>TODO list</b> 
+<ol>
+
+<li>ordenar la entrada del input y hacerla con scripting para no repetir tecleos</li>
+<li>investigar y desarrollar mi manera economica de cargar data sets en c++ como hacia
+    con pd.read_csv etc...
 </li>
 
 <li>
-	emprolijar la lectura
+    how did I manage to glue the profile to the inner part in
+    Japan, to make the drawings? Was it by hand? Was it gathering the indices from the code?
 </li>
 
 <li>
-	Make tests and fixed referential outputs of inner part
+    De la documentación: sacar toda la parte de "uso del profiler solito". Ahora va a ser un solo programa.
+</li>
+<li>
+    escribir this -> 
+</li>
+<li>
+    emprolijar la lectura
 </li>
 
 <li>
-	Make tests and fixed referential outputs of outer part
+    Make tests and fixed referential outputs of inner part
 </li>
 
 <li>
-	carefully choose the version of the outer part to put</br>
-	with the inner part in wafer. Should be the version that</br>
-	looks for the corresponding glue vertices by brute force.
+    Make tests and fixed referential outputs of outer part
 </li>
 
 <li>
-	ver nombres de m'etodos y vars y mejorarlos
-	<ol>
-		<li>
-			methods
-		</li>
-		<li>
-			vars
-		</li>
-		<li>
-			classes
-		</li>
+    carefully choose the version of the outer part to put</br>
+    with the inner part in wafer. Should be the version that</br>
+    looks for the corresponding glue vertices by brute force.
+</li>
+
+<li>
+    ver nombres de m'etodos y vars y mejorarlos
+    <ol>
+        <li>
+            methods
+        </li>
+        <li>
+            vars: 
+            <ul>
+                <li> L1, L2     <----- length_of_cut_1, length_of_cut_2 </li>    
+                <li> angle_diff <----- angle_between_cuts </li>
+                  
+            </ul>
+        </li>
+        <li>
+            classes
+        </li>
                 <li>
-	                Names of files 
+                    Names of files 
                 </li>
-	</ol>
+    </ol>
 </li>
 
 <li>
-	estudiar bien qu'e hace cada cosa
-	<ol>
-		<li> refactory de cada cosa como me guste a m'i </li>
-		<li> eliminate repeated code </li>
-	</ol>
+    estudiar bien qu'e hace cada cosa
+    <ol>
+        <li> refactory de cada cosa como me guste a m'i </li>
+        <li> eliminate repeated code </li>
+    </ol>
 </li>
 <li>
-	try to unify in an Object Oriented way all the things that are split with</br>
-	.                   if (wtype == 1) ...</br>
-	.                   if (wtype == 2) ...</br>
+    try to unify in an Object Oriented way all the things that are split with</br>
+<p>
+<font face="monospace">
+
+    .                   if (wtype == 1) ...</br>
+    .                   if (wtype == 2) ...</br>
+</font>
+</p>
+
 <li>
 there are lots of enumerative parts of main () that should be
 the body of a function.
 </li>
 <li>
-	TODO: study how to use this to enable pi </br>
+study how to use this to enable pi </br>
+<p>
+<font face="monospace">
+    
         >>  constexpr auto γ{"0.577215664901532860606512090082402"sv}; </br>
-	3.141592653589793 </br>
-	3.14159265358979323846 </br>
-	(taken from https://en.cppreference.com/w/cpp/numeric/constants) </br>
+        3.141592653589793 </br>
+        3.14159265358979323846 </br>
+        (taken from https://en.cppreference.com/w/cpp/numeric/constants) </br>
+
+</font>
+</p>
 </li>
+
 <li>
-TODO: usar <valarray> en todos los lugares en donde haya puntos de R3 o R2
+usar <valarray> en todos los lugares en donde haya puntos de R3 o R2
 </li>
+
 <li>
-TODO: implement (possibly preprocessor) code to print the name of a variable
-      and it's value. That was the idea behind "PRINT"
+TEST the preprocessor code to print the name of a variable
+      and it's value. __info__
 </li>
+
 <li>
-TODO: estudiar el chap Numerics de Tour of C++
+estudiar el chap Numerics de Tour of C++
 </li>
+
 <li>
-TODO:
-check if the issue that there was PRINT written in the code is simply a macro for the 
-preprocessor
-</li>
-<li>
-TODO:
 Really nice! I found something interesting to mix up.
 See what is in puesta_a_tierra.pptx, in the electricity course, about the resistivity.
 There is even a drawing with four probes. See which application to grounding can I sell
