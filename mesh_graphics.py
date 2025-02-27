@@ -56,18 +56,18 @@ def draw_isolated_points(vertices_file, folder = "."):
 
 
 def plot_all_tetrahedra(
-        vertices_file: str,      # nodes.dat
-        connectivity_file: str,  # elements.dat
-        folder: str = ".",
-        isolated_points: str = None,
-        number_of_isolated_points_to_draw: int = 3,
-        vert_delim: str = ",",
-        elem_delim: str = ",",
-        colors: Tuple = (.2,.3,.4)
+        vertices_file,  # nodes.dat
+        elements_file,  # elements.dat
+        folder = ".",
+        isolated_points = None,
+        number_of_isolated_points_to_draw = 3,
+        vert_delim = ",",
+        elem_delim = ",",
+        colors = (.2,.3,.4)
     ) -> None:
 
-    vertices_file     = folder + "/" + vertices_file
-    connectivity_file = folder + "/" + connectivity_file
+    vertices_file = folder + "/" + vertices_file
+    elements_file = folder + "/" + elements_file
 
     vertices = np.loadtxt(vertices_file, delimiter=vert_delim)
 
@@ -77,7 +77,7 @@ def plot_all_tetrahedra(
 
     del vertices
     
-    all_elements = np.loadtxt(connectivity_file, delimiter=elem_delim)
+    all_elements = np.loadtxt(elements_file, delimiter=elem_delim)
 
     # Here we have all tetrahedra, which have 6 edges.
     n_con = 0
