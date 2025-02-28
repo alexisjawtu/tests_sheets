@@ -1,12 +1,19 @@
-x86_64-linux-gnu-g++-12
 <b>Objetivo: la primera version de la wafer sale con la busqueda enumerativa de los 
-nodos de empalme con el perfil.</b>
+nodos de empalme con el perfil.</b></br>
+
+<b> Importante: no hacer merge de isolate-type-* con topic. </b></br>
+<b> Importante: lo que quede bien de los casos aislados, se incorpora a mano a topic. </b></br>
 
 <b>CONTINUE HERE</b> 
 
 <ol>
     <li> 
-         seguir con graficar test2
+        En GenMEsh: 
+        el calculo de  "distance(pA, pD)" esta muchas veces repetido!
+        poner "dist_AD" transitoriamente
+    </li>
+    
+    <li> 
          hacer que el graficar vaya mostrando lo que hace en cada linea
                 > import ...
                 > from ... import ...
@@ -60,6 +67,19 @@ nodos de empalme con el perfil.</b>
 </li>
 
 <li>
+    Haldor Topsøe, Geometric Factors in Four Point Resistivity Measurement , 1966
+
+    https://www.ossila.com/pages/sheet-resistance-theory
+
+    https://www.ossila.com/pages/resources
+
+    (??????)
+    Remark:
+    In mesh generation, the unit of legth will be "cm".
+    Because, "cm" is used in the Yamashita method uses.
+</li>
+
+<li>
     ver nombres de m'etodos y vars y mejorarlos
     <ol>
         <li>
@@ -68,9 +88,10 @@ nodos de empalme con el perfil.</b>
         <li>
             vars: 
             <ul>
-                <li> theta <----- theta_p (to finish with the confusion </li>
+                <li> theta <----- theta_p <----- probe_rotation_angle (to finish with the confusion </li>
                 <li> L1, L2     <----- length_of_cut_1, length_of_cut_2 </li>    
                 <li> angle_diff <----- angle_between_cuts </li>
+                <li> GenMesh::direc_AD <----- versor_probe_spin </li>
                   
             </ul>
         </li>
@@ -88,6 +109,7 @@ nodos de empalme con el perfil.</b>
     <ol>
         <li> refactory de cada cosa como me guste a m'i </li>
         <li> eliminate repeated code </li>
+        <li> make fuctions to judge the geometrical conditon for the probe and the shape. </li>
     </ol>
 </li>
 <li>
