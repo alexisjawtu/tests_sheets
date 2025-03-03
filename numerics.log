@@ -3,6 +3,58 @@ by Alexis Jawtuschenko
 
 Wafer class (1,2,3,4,5): 1
 Mesh scale (1 <= scale <= 20): 14
+Wafer diameter [mm]: 300
+Wafer height [μm]: 200
+Coordinate x of the probe center [mm]: 65
+
+Coordinate y of the probe center: [mm]: 58
+Pitch of the probe leads [mm]: 4
+Rotation angle of the probe [0-180 deg]: 27
+
+-0.891007 -0.45399 -0.891007 -0.45399
+
+-0.891007 -0.45399 0.891007 0.45399
+dist_probe_to_bound_max 23.7097
+dist_probe_to_bound_min 6.29523
+ A  point :7.0346 6.07239
+ B  point :6.6782 5.8908
+Value list: 0 3.08453
+1 2.68596
+2 2.2874
+3 1.88884
+4 1.49027
+5 1.09171
+6 0.693147
+7 0.346574
+8 0
+9 -0.346574
+10 -0.693147
+11 -1.03477
+12 -1.3764
+13 -1.71802
+14 -2.05965
+15 -2.40128
+16 -2.7429
+17 -3.08453
+ Value list END
+Min value -3.08453
+Max value 3.08453
+Base value3.08453
+Scale 0.522876
+Step around probes 0.341626
+Step number 7
+inner_max_h 0.62059
+local max h: 2.61916 local min h 0.62059
+probe_theta_p 0.471239
+Planar mesh points determined.
+
+=================================================================================
+
+Mesh generation for wafer domain. 
+by Alexis Jawtuschenko
+
+Wafer class (1,2,3,4,5): 1
+Mesh scale (1 <= scale <= 20): 14
 Wafer diameter [mm]: 200
 Wafer height [μm]: 500
 Coordinate x of the probe center [mm]: 25

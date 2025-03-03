@@ -1,12 +1,10 @@
 <b>Objetivo: la primera version de la wafer sale con la busqueda enumerativa de los 
 nodos de empalme con el perfil.</b></br>
 
-<b> Importante: no hacer merge de isolate-type-* con topic. </b></br>
-<b> Importante: lo que quede bien de los casos aislados, se incorpora a mano a topic. </b></br>
-
 <b>CONTINUE HERE</b> 
 
 <ol>
+    <li> como hacer un makefile </li>
     <li> 
         En GenMEsh: 
         el calculo de  "distance(pA, pD)" esta muchas veces repetido!
@@ -21,7 +19,6 @@ nodos de empalme con el perfil.</b></br>
     <li> elegir un metodo ordenado para dibujar tests sin repetir acciones 
          y dejarlo en uso.
     </li>
-    <li>hacer un repo de tests exclusivamente con su graficador .py</li>
 </ol>
 
 </br>
@@ -32,7 +29,7 @@ nodos de empalme con el perfil.</b></br>
 <b>TODO list</b> 
 <ol>
 
-<li>ordenar la entrada del input y hacerla con scripting para no repetir tecleos</li>
+<li>entrada del input: hacerla con scripting para no repetir tecleos</li>
 <li>investigar y desarrollar mi manera economica de cargar data sets en c++ como hacia
     con pd.read_csv etc...
 </li>
@@ -88,10 +85,9 @@ nodos de empalme con el perfil.</b></br>
         <li>
             vars: 
             <ul>
-                <li> theta <----- theta_p <----- probe_rotation_angle (to finish with the confusion </li>
+                <li> theta_p <----- probe_rotation_angle (to finish with the confusion </li>
                 <li> L1, L2     <----- length_of_cut_1, length_of_cut_2 </li>    
                 <li> angle_diff <----- angle_between_cuts </li>
-                <li> GenMesh::direc_AD <----- versor_probe_spin </li>
                   
             </ul>
         </li>
@@ -142,11 +138,6 @@ study how to use this to enable pi </br>
 
 <li>
 usar <valarray> en todos los lugares en donde haya puntos de R3 o R2
-</li>
-
-<li>
-TEST the preprocessor code to print the name of a variable
-      and it's value. __info__
 </li>
 
 <li>
