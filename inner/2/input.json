@@ -1,0 +1,16 @@
+{
+   "input_2": [
+      {
+         "test_name": "any",
+         "folder_missing": "./",
+         "wafer_type": "1",
+         "scale": "13",
+         "user_diameter_for_wafer": "2000",
+         "user_thickness_of_inner_wafer": "500",
+         "probe_x": "250",
+         "probe_y": "250",
+         "pitch": "5",
+         "theta": "45"
+      }
+   ]
+}

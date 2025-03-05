@@ -1,12 +1,16 @@
 {
-    "test_name":                   "any",
-    "folder_MISSING":          "inner/3",
-    "wafer_type":                      1,
-    "scale":                          14,
-    "user_diameter_for_wafer":       200,
-    "user_thickness_of_inner_wafer": 500,
-    "probe_x":                        25,
-    "probe_y":                        25,
-    "pitch":                           2,
-    "theta_p":                        30,
+   "input_3": [
+      {
+         "test_name": "any",
+         "folder_missing": "\"inner/3\"",
+         "wafer_type": "1",
+         "scale": "14",
+         "user_diameter_for_wafer": "200",
+         "user_thickness_of_inner_wafer": "500",
+         "probe_x": "25",
+         "probe_y": "25",
+         "pitch": "2",
+         "theta_p": "30"
+      }
+   ]
 }

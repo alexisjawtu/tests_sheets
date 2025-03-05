@@ -1,0 +1,16 @@
+{
+   "input.json": [
+      {
+         "test_name": "Ex1_Type1",
+         "folder_missing": "./",
+         "wafer_type": "1",
+         "scale": "20",
+         "user_diameter_for_wafer": "300",
+         "user_thickness_of_inner_wafer": "500",
+         "probe_x": "0",
+         "probe_y": "0",
+         "pitch": "1",
+         "theta": "0"
+      }
+   ]
+}
