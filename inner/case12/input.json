@@ -1,0 +1,11 @@
+test_name: Ex12_Type2,
+folder_missing: ./,
+wafer_type: 2,
+user_diameter_for_wafer: 595,
+user_thickness_of_inner_wafer: 800,
+mesh_scale: 11.2
+sensor_x: 188,
+sensor_y: -168,
+probe_angle: 30,
+pitch: 4.6,
+len_orient_flat_1: 65,

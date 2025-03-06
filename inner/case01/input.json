@@ -4,13 +4,16 @@
          "test_name": "Ex1_Type1",
          "folder_missing": "./",
          "wafer_type": "1",
-         "scale": "20",
          "user_diameter_for_wafer": "300",
          "user_thickness_of_inner_wafer": "500",
+         "scale": "20",
          "probe_x": "0",
          "probe_y": "0",
-         "pitch": "1",
-         "theta": "0"
+         "theta": "0",
+         "pitch": "1"
       }
    ]
 }
+
+
+1 300 500 20 0 0 0 1
