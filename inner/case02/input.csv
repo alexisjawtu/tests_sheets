@@ -1,2 +1,0 @@
-test_name,folder_MISSING,wafer_type,scale,user_diameter_for_wafer,user_thickness_of_inner_wafer,probe_x,probe_y,pitch,theta_p
-any,./,1,13,2000,500,250,250,5,45
