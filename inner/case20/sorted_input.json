@@ -3,9 +3,12 @@ folder_missing: ./,
 wafer_type: 2,
 user_diameter_for_wafer: 587,
 user_thickness_of_inner_wafer: 597,
-mesh_scale: 9.8
+mesh_scale: 9.8,
 sensor_x: 180,
 sensor_y: -160,
 probe_angle: 38,
 pitch: 3.8,
 len_orient_flat_1: 57,
+
+
+2 587 597 9.8 180 -160 38 3.8 57 
