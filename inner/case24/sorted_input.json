@@ -1,6 +1,6 @@
 test_name: Ex10_Type2,
 folder_missing: ./,
-wafer_type: 2,
+sheet_class: 3,
 user_diameter_for_wafer: 597,
 user_thickness_of_inner_wafer: 798,
 mesh_scale: 7,

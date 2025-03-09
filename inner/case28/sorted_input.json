@@ -1,6 +1,6 @@
 test_name: Ex14_Type2,
 folder_missing: ./,
-wafer_type: 2,
+sheet_class: 3,
 user_diameter_for_wafer: 593,
 user_thickness_of_inner_wafer: 795,
 mesh_scale: 11.4,
