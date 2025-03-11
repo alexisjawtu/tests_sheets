@@ -1,0 +1,17 @@
+test_name: "Ex31_Class4",
+folder_number 31: "./",
+sheet_class: 4,
+user_diameter_for_wafer: 598,
+user_thickness_of_inner_wafer: 788,
+mesh_scale: 15
+sensor_x: 180,
+sensor_y: 171,
+probe_angle: 26,
+pitch: 4.9,
+len_orient_flat_1: -1,
+len_orient_flat_2: -1,
+angle_diff: -1,
+notch_depth: 1.1,
+bend_radius: 1,
+argvalues 31 4 598 788 15 180 171 26 4.9 1.1 1
+          1   2   3 4   5   6  7   8   9  10

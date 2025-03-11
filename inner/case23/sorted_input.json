@@ -1,5 +1,5 @@
 test_name: Ex9_Type2,
-folder_missing: ./,
+folder_number 23: ./,
 sheet_class: 3,
 user_diameter_for_wafer: 598,
 user_thickness_of_inner_wafer: 797,
@@ -9,7 +9,6 @@ sensor_y: 171,
 probe_angle: 27,
 pitch: 4.9,
 len_orient_flat_1: 68,
-
-
-2 598 797 6 191 171 27 4.9 68 
 len_orient_flat_2: 69,
+
+argvalues 23 3 598 797 6 191 171 27 4.9 68 69 23

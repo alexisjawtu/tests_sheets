@@ -1,5 +1,5 @@
 test_name: Ex15_Type2,
-folder_missing: ./,
+folder_number 29: ./,
 sheet_class: 3,
 user_diameter_for_wafer: 592,
 user_thickness_of_inner_wafer: 794,
@@ -9,7 +9,7 @@ sensor_y: -165,
 probe_angle: 33,
 pitch: 4.3,
 len_orient_flat_1: 62,
-
-
-2 592 794 11.5 185 -165 33 4.3 62 
 len_orient_flat_2: 59,
+
+
+argvalues 29 3 592 794 11.5 185 -165 33 4.3 62 59 29

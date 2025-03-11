@@ -1,5 +1,5 @@
 test_name: Ex12_Type2,
-folder_missing: ./,
+folder_number: 12,
 wafer_type: 2,
 user_diameter_for_wafer: 595,
 user_thickness_of_inner_wafer: 800,
@@ -11,4 +11,4 @@ pitch: 4.6,
 len_orient_flat_1: 65,
 
 
-2 595 800 11.2 188 -168 30 4.6 65 
+argvalues 12 2 595 800 11.2 188 -168 30 4.6 65 
