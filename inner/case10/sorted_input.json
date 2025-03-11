@@ -1,0 +1,15 @@
+test_name: Ex10_Type2,
+folder_missing: ./,
+wafer_type: 2,
+user_diameter_for_wafer: 597,
+user_thickness_of_inner_wafer: 798,
+mesh_scale: 7,
+sensor_x: 190,
+sensor_y: -170,
+probe_angle: 28,
+pitch: 4.8,
+len_orient_flat_1: 67,
+
+
+
+ 2 597 798 7 190 -170 28 4.8 67

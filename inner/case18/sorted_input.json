@@ -1,0 +1,14 @@
+test_name: Ex18_Type2,
+folder_missing: ./,
+wafer_type: 2,
+user_diameter_for_wafer: 589,
+user_thickness_of_inner_wafer: 599,
+mesh_scale: 11.8,
+sensor_x: 182,
+sensor_y: -162,
+probe_angle: 36,
+pitch: 4,
+len_orient_flat_1: 59,
+
+
+2 589 599 11.8 182 -162 36 4 59 

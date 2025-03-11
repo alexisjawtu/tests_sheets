@@ -4,6 +4,7 @@ nodos de empalme con el perfil.</b></br>
 <b>CONTINUE HERE</b> 
 
 <ol>
+    <li> wafer se va a llamar sheet, o lo que me inspire la lectura del articulo de los '50s </li>
     <li> como hacer un makefile </li>
     <li> 
         En GenMEsh: 
@@ -32,6 +33,21 @@ nodos de empalme con el perfil.</b></br>
 <li>entrada del input: hacerla con scripting para no repetir tecleos</li>
 <li>investigar y desarrollar mi manera economica de cargar data sets en c++ como hacia
     con pd.read_csv etc...
+</li>
+
+<li>
+    Esto podria ir despues de tener el m.v.p.
+    
+    double n;
+    std::string line;
+
+    while (std::cout << "Enter a number: " && !(std::cin >> n))
+    {
+        std::cin.clear();
+        std::getline(std::cin, line);
+        std::cout << line << "\nI am sorry, but '" << line << "' is not a number\n";
+    }
+    std::cout << n << "\nThank you for entering the number " << n << '\n';
 </li>
 
 <li>
@@ -86,8 +102,8 @@ nodos de empalme con el perfil.</b></br>
             vars: 
             <ul>
                 <li> theta_p <----- probe_rotation_angle (to finish with the confusion </li>
-                <li> L1, L2     <----- length_of_cut_1, length_of_cut_2 </li>    
-                <li> angle_diff <----- angle_between_cuts </li>
+                <li> L1, L2     <----- len_orientflat_1, len_orientflat_2 </li>    
+                <li> angle_diff <----- angle_between_flats </li>
                   
             </ul>
         </li>

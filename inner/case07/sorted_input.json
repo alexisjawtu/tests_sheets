@@ -1,0 +1,13 @@
+1 "folder_missing": "./",
+1 "wafer_type": 2,
+1 "user_diameter_for_wafer": 600,
+1 "user_thickness_of_inner_wafer": 801,
+1 "scale": 13
+1 "probe_x": 14,
+1 "probe_y": -25,
+1 "theta_p": 27,
+1 "pitch": 4,
+1 "len_orient_flat_1": 70,
+0
+0
+ 2 600 801 13 14 -25 27 4 70
