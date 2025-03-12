@@ -116,6 +116,8 @@ def plot_all_tetrahedra(
 
     mlab.pipeline.surface(src, color=colors)
 
+    mlab.title(vertices_file, color=(0, 0, 0))
+
     src.update()
 
     if isolated_points:
