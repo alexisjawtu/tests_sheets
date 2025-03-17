@@ -50,17 +50,12 @@ def check_error_norms (test_number):
     file     = np.loadtxt("inner/case" + str(test_number) + "/result/"+BDR_NODES,
                            delimiter=",")
     tmp_file = np.loadtxt("tmp/" + str(test_number) + TMP_BDR_NODES, delimiter=",")
-    print(BDR_NODES, np.max(file - tmp_file))
+    print(test_number, "BDR_NODES", np.max(file - tmp_file))
     
-    file     = np.loadtxt("inner/case" + str(test_number) + "/result/" + ELEMENTS,
-                           delimiter=",")
-    tmp_file = np.loadtxt("tmp/" + str(test_number) + TMP_ELEMENTS, delimiter=",")
-    print(ELEMENTS, np.max(file - tmp_file))
-
     file     = np.loadtxt("inner/case" + str(test_number) + "/result/" + NODES,
                            delimiter=",")
     tmp_file = np.loadtxt("tmp/" + str(test_number) + TMP_NODES, delimiter=",")
-    print(NODES, np.max(file - tmp_file))
+    print(test_number, "NODES", np.max(file - tmp_file), "\n")
 
 
 def draw_isolated_points(vertices_file, folder = "."):
