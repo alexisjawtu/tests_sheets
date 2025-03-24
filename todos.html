@@ -5,16 +5,28 @@ nodos de empalme con el perfil.</b></br>
 
 <ol>
 
-<li>
-    carefully choose the version of the outer part to put</br>
-    with the inner part in wafer. Should be the version that</br>
-    looks for the corresponding glue vertices by brute force.
-</li>
+    <li>
+    	carefully choose the version of the outer part to put</br>
+   	with the inner part in wafer. Should be the version that</br>
+    	looks for the corresponding glue vertices by brute force.
+    </li>
+
+    <li>
+	documentar bien esta variable
+	int SetParameter::argv_num_of_input;
+    </li>
 
     <li> uniformize the input files, the jsons </li>
+
     <li> Deshardcodear todo (sobre todo en el cilindro) y usar 'const' como lo sugiere Stroustrup en 5.4 </li>
+
     <li> hacer que los graficos muestren la lista de sorted_input.json</li>
-    <li> como hacer un makefile </li>
+    <li> 
+	    Hacer un header con las constantes deshardcodeadas, por ejemplo
+    	 	* nombres de archivos
+    		* valores de parametros
+    </li>
+
     <li> 
 	En Cylinder.cpp
         el calculo de  "distance(pA, pD)" esta muchas veces repetido!
@@ -67,6 +79,7 @@ del notch porque aparecen en mayavi. Hay que borralos para la búsqueda de nodos
 <li>
     escribir this -> 
 </li>
+
 <li>
     emprolijar la lectura
 </li>
