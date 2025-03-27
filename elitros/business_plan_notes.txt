@@ -4,6 +4,10 @@ Because the subjects follow a certain style guide.
 
 1. Sumario ejecutivo.
 
+
+
+
+
 hacerlo al final.
 resumen en una hoja del plan.
 
@@ -20,12 +24,29 @@ cosas que no le pueden faltar {
 
 todo esto sintetico y claro {
 
-	*how it started
-	*how it evolves
-	*where it is going to
-	*what are we going to do
-	*how
-	*which is our esencial skill
+	*how it started: me especialicé en algo durante mi doctorado
+                         lo presenté en Japón y al chino le gustó.
+
+			 Resultó que el chino estaba intentando cosas similares y estaban trabados.
+			 Se acordó de mí y me propuso el trabajo.
+
+	*how it evolves: Hacerlo mejor y más general que en Niigata
+			 terminar de empaquetar y hacer de uso amigable un p.m.v.
+			 para salir a encuestar o vender.
+
+	*where it is going to: hacer librerías de software 3D para para asistir
+                               en el trabajo experimental en electromagnetismo en general.
+ 
+
+	*what are we going to do: 
+
+	*how:
+
+	*which is our esencial skill: código de calidad --> modificable y mantenible sin
+                                                            mucho trabajo repetido
+                                                        --> permite ir directo a la necesidad
+							    puntual de cada cliente
+
 	*F.O.D.A. {
 		oportunidad: mucho uso de la electronics
 		fortaleza: perseverancia
@@ -42,29 +63,124 @@ todo esto sintetico y claro {
 
 3. Producto, servicio.
 
-No es la propuesta de valor, sino la descripcion del producto.
+Programa de simulación de metrología y estrés de las láminas.
+Describir con detalle:
 
-No es seductor, sino detallado y al mismo tiempo
+El software ---> inputs variados y sin restricciones significativas,
+            ---> láminas de distintas geometrías, o sea no es un programa que construye
+                 solamente láminas rectangulares
+	    ---> una subdivisión 3D 
+            ---> un método numérico para cada ecuación
+                 que describa algo electromagnético de 
+	         interés en (semi)conductores y aislantes.
+            ---> resultados esperados al someter a los materiales
+                 a fenómenos, a los cuales después ajustar los experimentos
+                 tangibles (usarlos como referencia)
 
-	** amigable para leer **
+La utilidad sería:
+   * calibrar las máquinas 'a priori' sin hacer tanto desperdicio
+     con una calibración por ensayo y error con los materiales en stock.
 
-Aproximadamente hasta cinco hojas.
+Lo de "flexibilidad para la ampliación" por ahora sería a la manera de los
+luthiers. De a un cliente a la vez.
+       <--- reaccioné rápido ante propuestas con arenga después de que yo tenía
+            ya algo hecho. (No socios ahora).
 
-Describir el proceso de production
-
-Tasks and resposibilities Distribution. Ojo con el
-
-	"" todos hacemos de todo ""
-
-porque oscurece las responsabilidades individuales
+#### No es la propuesta de valor, sino la descripcion del producto.
+#### No es seductor, sino detallado y al mismo tiempo
+#### 	** amigable para leer **
+#### Aproximadamente hasta cinco hojas.
+#### Describir el proceso de production. Tasks and resposibilities Distribution. Ojo con el
+#### 	"" todos hacemos de todo ""
+#### porque oscurece las responsabilidades individuales
 
 4. Mercado.
 
-Salir a preguntar con, a lo sumo, el p.m.v. antes de que quede todo como yo
-quisiera (como lo habló Verónica, de Córdoba, en la charla).
+* $$subsidios académicos de grupos de análisis numérico, o física aplicada,
+    que me pidan la colaboración externa para una investigación que ellos están
+    haciendo.
+    CONAE y la CNEA en Argentina.
 
-Cuántas personas o compañías comprarían o hacen lo que yo hago?
-Dónde están?
-Quiénes son?
-Pensar en estas preguntas a modo de pseudo investigación de mercado.
+* Preguntar y ofrecer el p.m.v. a los sectores de I+D de las empresas de silicon sheets.
+  WaferPro, NAPSON. (No al mail institucional porque tal vez no estén al tanto,
+                     tratar de llegar a los grupos de ciencia aplicada de las empresas, 
+		     como lo era el equipo de optimización que yo integraba en Mercado Libre.)
+
+* La metrología se aplica a láminas nuevas y también a PCBs o láminas de semiconductores
+  usados --> empresas como Reciclarg pueden estar interesados en estas mediciones.
+
+
+#### Salir a preguntar con, a lo sumo, el p.m.v. antes de que quede todo como yo
+#### quisiera (como lo habló Verónica, de Córdoba, en la charla).
+#### Cuántas personas o compañías comprarían o hacen lo que yo hago?
+#### Dónde están? Quiénes son?
+#### Pensar en estas preguntas a modo de pseudo investigación de mercado.
+
+5. Operaciń y organizacion del negocio
+
+* descripcion de proceso de compra 
+* canales comerciales
+
+	* vender el software a modo de transferencia tecnológica (ceder el código, los tests, etc.)
+	* usar en línea pagando por cada uso una suma pequeña
+	* comprar una licencia por un tiempo
+	* liberar bajo una licencia de software libre una versión básica del software y después cobrar cada 
+	  personalización pedida
+	  por cada cliente según su necesidad.
+
+6. Marco legal, ambiente, sociedad
+
+forma juridica: alguna especie de consultoría externa? El modelo es como el de un FREELANCER
+conoce las normas: no
+que asesoramiento necesita: de autoría y propiedad, legal, impositivo, uso de divisas extranjeras.
+
+7. Planeamiento financiero
+
+* primero lo que necesito no es dinero per se sino tiempo
+  para terminar ejemplos de paquetes para conversar mostrando algo.
+  O sea mi inversión inicial es afrontar mis costos de vida. Yo creo que
+  con tres meses de mecenazgo me alcanzaría para después empezar a mostrar
+  y vender.
+
+* inversores sí, socios no.
+  No en la producción de los bienes.
+  Sí puede ser socios que se ocupen de la parte logística (como en la PyME de Edgar)
+                                  y de la parte de ventas.
+
+* no sé nada del dinero:
+  podría decir 10.000 usd por el paquete que me pediste,
+               pero en función del tiempo de trabajo y
+               debería quedar claro de alguna manera que lo que fue solicitado
+               está entregado (con esto de los programas a pedido pasa que no 
+                               saben describir qué necesitan que les de un programa,
+                               no sería el caso en el público en el que estoy pensando)
+
+  Pero una cosa más importante en la que pienso es
+               en vez de 10.000 te pido 5.000 por el paquete y dejamos el
+               canal para que me vayas pidiendo lo que te habías olvidado que
+               querías y te cobro cada consulta/agregado.
+
+
+
+
+#### tener dinero no asegura armar una empresa
+#### es posible armar una empresa sin dinero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
