@@ -4,6 +4,41 @@ nodos de empalme con el perfil.</b></br>
 <b>CONTINUE HERE</b> 
 
 <ol>
+         <li>
+              Cambiar los nombres como
+                    caseX/result/{elements ===> cylinder_elements}.dat
+         </li>
+         <li> TODO:
+                 map<int, list<int>> vert_by_elems;
+                 /* lo lleno durante la escritura de outfile ("elements.dat")
+                    en la misma recorrida, sin complicarme.
+                 */
+        </li>
+
+         <li> 
+                revisar y borrar sheets/topic
+                                 sheets/isolate-1
+        </li>
+
+        <li>
+                de "reverse engineering":
+                                            cuál es diam(probe)?
+
+                                            ver la condición de "outside of wafer" que tiene
+                                            algo como 
+
+                                                eps fijo, radio(probe) <= 0.1 - eps
+        </li>
+
+         <li> 
+                 incluir angle_diff en los jsons 21..30
+        </li>
+
+       <li>
+        Parameter::vector<Point> pointlist; no tiene sentido que exista.
+        es solo para incluir los bdr_points en 3D y para contar su tamaño
+        </li>
+
         <li>
                 Name: change SetParameter with InputCollection class, that first loads
                 the input itself.
@@ -161,11 +196,31 @@ study how to use this to enable pi </br>
 </li>
 
 <li>
-usar <valarray> en todos los lugares en donde haya puntos de R3 o R2
+Para despu'es de finalizado el cilindro:
+Mandatory args:
+    nodes (3D) --para buscar los indices.
+    bdr_nodes (2D) y para pasarlos a (3D) +- thickness/2 --para hacer los elems de borde
+
+Intermediate "arg"
+    bdr_diags <--- orient_profile_walls() --necesito vertices_by_elements
 </li>
 
 <li>
-estudiar el chap Numerics de Tour of C++
+        Prfiler branches:
+            main toma * bdr_pts_2D
+                      * diagonals \subset {0, 1}^N
+                      --asume que el usuario sabe proporcionar las diagonales
+
+            develop toma * bdr_pts_2D
+                         * elements
+                         * nodes
+                         --brute force para determinar la correspondencia entre indices
+                           de distintos alcances.
+
+</li>
+
+<li>
+usar <valarray> en todos los lugares en donde haya puntos de R3 o R2
 </li>
 
 <li>
