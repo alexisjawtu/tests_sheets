@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-echo "[RUNNING] case09" && cylinder 09 2 598 797 6 191 171 27 4.9 68 
 echo "[RUNNING] case10" && cylinder 10 2 597 798 7 190 -170 28 4.8 67
 echo "[RUNNING] case11" && cylinder 11 2 596 799 11.1 189 -169 29 4.7 66 
 echo "[RUNNING] case12" && cylinder 12 2 595 800 11.2 188 -168 30 4.6 65 
@@ -34,3 +33,4 @@ echo "[RUNNING] case39" && cylinder 39 4 590 796 7 188 163 22 4.1 1.2 2
 echo "[RUNNING] case40" && cylinder 40 4 589 797 6 189 162 21 4 1 1.7
 echo "[RUNNING] case41" && cylinder 41 3 599 798 11 13 -24 26 5 130 120 90
 echo "[RUNNING] case42" && cylinder 42 3 599 798 11 13 -24 26 5 250 120 90
+echo "[RUNNING] case49" && cylinder 49 2 598 797 6 191 171 27 4.9 68 
