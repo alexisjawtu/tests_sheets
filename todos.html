@@ -4,6 +4,45 @@ nodos de empalme con el perfil.</b></br>
 <b>CONTINUE HERE</b> 
 
 <ol>
+
+Consequently, we prefer not to use literals (except very obvious ones, such as 0 and 1) in most
+places in our code. Instead, we use constants with descriptive names. Non-obvious literals in code
+(outside definitions of symbolic constants) are derisively referred to as magic constant. And by the
+way, 299792458 is one of the fundamental constants of the universe: the speed of light in vacuum
+measured in meters per second. If you didn’t instantly recognize that, why would you expect not to
+be confused and slowed down by other literals embedded in code? Avoid magic constants!
+
+To handle cases where the value of a constant that is initialized with a value that is not known at
+compile time but never changes after initialization, C++ offers a second form of constant (a const).
+
+[](a){S} | lambda expression | create a function object taking a as an argument (§21.2.3)
+
+An increment can be expressed in at least three ways:
+
+++a
+a+=1
+a=a+1
+
+Which notation should we use? Why? We prefer the first version, ++a, because it more directly
+expresses the idea of incrementing. It says what we want to do (increment a) rather than how to do
+it (add 1 to a and then write the result to a). In general, a way of saying something in a program is
+better than another if it more directly expresses an idea. The result is more concise and easier for a
+reader to understand. If we wrote a=a+1, a reader could easily wonder whether we really meant to
+increment by 1. Maybe we just mistyped a=b+1, a=a+2, or even a=a−1; with ++a there are far fewer
+opportunities for such doubts. Please note that this is a logical argument about readability and cor-
+rectness, not an argument about efficiency. Contrary to popular belief, modern compilers tend to
+generate exactly the same code from a=a+1 as for ++a when a is one of the built-in types. Similarly,
+we prefer a∗=scale over a=a∗scale.
+
+Uninitialized variables are a common
+source of errors.
+
+Programs are usually easier to write and to understand if each function performs a single logical
+action.
+
+If you count, you’ll find that we actually achieved quite a lot with rather few features. That’s
+the ideal!
+
         <li>
                 nice style!
                 Copy the style found in this game engine
