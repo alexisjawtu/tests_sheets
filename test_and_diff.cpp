@@ -58,3 +58,21 @@ diff $HOME/tests_wafers/inner/temp/result/bdr_nodes.dat $1/result/bdr_nodes.dat;
     */
 }
 
+
+
+	vector <string> cases_to_run 
+	{"11", "13", "24", "35", "41"};
+	    
+	for (auto c: cases_to_run)
+	    for (auto& file: magicliterals::files)
+    	    system
+    	    (
+    	        "diff " +
+    	        magicliterals::pathcurr +
+    	        c +
+    	        file +
+    	        " " +
+    	        magicliterals::pathorig +
+    	        c +
+    	        file ;
+    	    );
