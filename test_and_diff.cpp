@@ -45,7 +45,7 @@ int main ()
         "echo \"[RUNNING] case49\" $(cylinder 49 2 598 797 6 191 171 27 4.9 68)"
     };
 
-cout <<    magicliterals::bdry2Dverts;
+magicliterals::bdry2Dverts;
 //    for (auto c: cmds)
   //      system(c);
 

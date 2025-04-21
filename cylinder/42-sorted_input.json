@@ -1,0 +1,15 @@
+1 "folder_number 42": "./",
+1 sheet_class: 3,
+1 "user_diameter_for_wafer": 599,
+1 "user_thickness_of_inner_wafer": 798,
+1 "scale": 11,
+1 "probe_x": 13,
+1 "probe_y": -24,
+1 "theta_p": 26,
+1 "pitch": 5,
+1 "len_orient_flat_1": 250,
+1  len_orient_flat_2: 120,
+1  angle_diff: 90 
+0
+
+argvalues 42 3 599 798 11 13 -24 26 5 250 120 90
