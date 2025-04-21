@@ -3,6 +3,9 @@
 
 #include "common.h"
 
+TODO hacer una clase Test.
+y ya :)
+
 using namespace std;
 
 int main ()
