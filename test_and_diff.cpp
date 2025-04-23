@@ -44,17 +44,50 @@ int main ()
         "echo \"[RUNNING] case42\" $(cylinder 42 3 599 798 11 13 -24 26 5 250 120 90)",
         "echo \"[RUNNING] case49\" $(cylinder 49 2 598 797 6 191 171 27 4.9 68)"
     };
+    magicliterals::pathcurr + case_nr + magicliterals::bdry2Dverts;
+    magicliterals::pathorig + "case" + case_nr + "/result/" + magicliterals::bdry2Dverts;
 
-magicliterals::bdry2Dverts;
+vector <string> cases_to_run 
+{"11", "13", "24", "35", "41"};
+    
+for (auto c: cases_to_run)
+    for (auto& file: magicliterals::files)
+      system
+      (
+          "diff " +
+          magicliterals::pathcurr +
+          c +
+          file +
+          " " +
+          magicliterals::pathorig +
+          c +
+          file ;
+      );
+
+
+    
 //    for (auto c: cmds)
   //      system(c);
 
-    /*
-    $HOME/code/tests_sheets/cylinder/tmp/
-diff $HOME/tests_wafers/inner/temp/result/elements.dat $1/result/elements.dat;
-diff $HOME/tests_wafers/inner/temp/result/nodes.dat $1/result/nodes.dat;
-diff $HOME/tests_wafers/inner/temp/result/bdr_nodes.dat $1/result/bdr_nodes.dat;
+    // the differences
+    // case[nr] vs. [nr]- 
     return 0;
-    */
 }
 
+10-2D_bdr_vertices.dat
+10-cylinder_elements.dat
+10-cylinder_vertices.dat
+10-cylinder_verts_by_elems.dat
+
+
+
+41-cylinder_vertices.dat
+41-cylinder_verts_by_elems.dat
+42-2D_bdr_vertices.dat
+42-cylinder_elements.dat
+42-cylinder_vertices.dat
+42-cylinder_verts_by_elems.dat
+49-2D_bdr_vertices.dat
+49-cylinder_elements.dat
+49-cylinder_vertices.dat
+49-cylinder_verts_by_elems.dat
