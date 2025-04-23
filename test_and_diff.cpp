@@ -3,6 +3,9 @@
 
 #include "common.h"
 
+TODO hacer una clase Test.
+y ya :)
+
 using namespace std;
 
 int main ()
@@ -80,14 +83,25 @@ for (auto c: cases_to_run)
 10-cylinder_verts_by_elems.dat
 
 
-
-41-cylinder_vertices.dat
-41-cylinder_verts_by_elems.dat
 42-2D_bdr_vertices.dat
 42-cylinder_elements.dat
 42-cylinder_vertices.dat
 42-cylinder_verts_by_elems.dat
-49-2D_bdr_vertices.dat
-49-cylinder_elements.dat
-49-cylinder_vertices.dat
-49-cylinder_verts_by_elems.dat
+
+
+	vector <string> cases_to_run 
+	{"11", "13", "24", "35", "41"};
+	    
+	for (auto c: cases_to_run)
+	    for (auto& file: magicliterals::files)
+    	    system
+    	    (
+    	        "diff " +
+    	        magicliterals::pathcurr +
+    	        c +
+    	        file +
+    	        " " +
+    	        magicliterals::pathorig +
+    	        c +
+    	        file ;
+    	    );
