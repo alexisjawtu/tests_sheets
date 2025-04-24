@@ -1,0 +1,10 @@
+echo "case 11"
+diff /home/alexis/code/tests_sheets/cylinder/tmp/11-cylinder_elements.dat /home/alexis/code/tests_sheets/cylinder/11-cylinder_elements.dat
+echo "case 13"
+diff /home/alexis/code/tests_sheets/cylinder/tmp/13-cylinder_elements.dat /home/alexis/code/tests_sheets/cylinder/13-cylinder_elements.dat
+echo "case 24"
+diff /home/alexis/code/tests_sheets/cylinder/tmp/24-cylinder_elements.dat /home/alexis/code/tests_sheets/cylinder/24-cylinder_elements.dat
+echo "case 35"
+diff /home/alexis/code/tests_sheets/cylinder/tmp/35-cylinder_elements.dat /home/alexis/code/tests_sheets/cylinder/35-cylinder_elements.dat
+echo "case 41"
+diff /home/alexis/code/tests_sheets/cylinder/tmp/41-cylinder_elements.dat /home/alexis/code/tests_sheets/cylinder/41-cylinder_elements.dat

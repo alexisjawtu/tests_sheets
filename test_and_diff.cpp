@@ -1,12 +1,8 @@
-#include <iostream>
-#include <cstdlib>
-
 #include "common.h"
 
-TODO hacer una clase Test.
-y ya :)
 
 using namespace std;
+
 
 int main ()
 {
@@ -47,61 +43,55 @@ int main ()
         "echo \"[RUNNING] case42\" $(cylinder 42 3 599 798 11 13 -24 26 5 250 120 90)",
         "echo \"[RUNNING] case49\" $(cylinder 49 2 598 797 6 191 171 27 4.9 68)"
     };
-    magicliterals::pathcurr + case_nr + magicliterals::bdry2Dverts;
-    magicliterals::pathorig + "case" + case_nr + "/result/" + magicliterals::bdry2Dverts;
 
-vector <string> cases_to_run 
-{"11", "13", "24", "35", "41"};
-    
-for (auto c: cases_to_run)
-    for (auto& file: magicliterals::files)
-      system
-      (
-          "diff " +
-          magicliterals::pathcurr +
-          c +
-          file +
-          " " +
-          magicliterals::pathorig +
-          c +
-          file ;
-      );
+    for (auto c: cmds)
+        system(c);
 
+    vector <string> cases_to_run 
+    {"11", "13", "24", "35", "41"};
+        
+    vector <string> files
+    {
+        filenames::bdry2Dverts,
+        filenames::elemstable,
+        filenames::vertices3D
+    };
 
-    
-//    for (auto c: cmds)
-  //      system(c);
+    ofstream test1 {"./runtest1.sh", ios::trunc};
+    ofstream test2 {"./runtest2.sh", ios::trunc};
+    ofstream test3 {"./runtest3.sh", ios::trunc};
 
-    // the differences
-    // case[nr] vs. [nr]- 
+    for (auto c: cases_to_run)
+    {
+        test1 << "echo \"case " << c << "\"\n"
+                << "diff "
+                << filenames::pathcurr
+                << c << "-" << filenames::bdry2Dverts << " "
+                << filenames::pathorig
+                << c << "-" << filenames::bdry2Dverts << '\n';
+
+        test2 << "echo \"case " << c << "\"\n"
+                << "diff "
+                << filenames::pathcurr
+                << c << "-" << filenames::elemstable << " "
+                << filenames::pathorig
+                << c << "-" << filenames::elemstable << '\n';
+
+        test3 << "echo \"case " << c << "\"\n"
+                << "diff "
+                << filenames::pathcurr
+                << c << "-" << filenames::vertices3D << " "
+                << filenames::pathorig
+                << c << "-" << filenames::vertices3D << '\n';
+    }
+
+    test1.close();
+    test2.close();
+    test3.close();
+
+    system("bash runtest1.sh >> bdry2Dverts.diff");
+    system("bash runtest2.sh >> elemstable.diff");
+    system("bash runtest3.sh >> vertices3D.diff");
+
     return 0;
 }
-
-10-2D_bdr_vertices.dat
-10-cylinder_elements.dat
-10-cylinder_vertices.dat
-10-cylinder_verts_by_elems.dat
-
-
-42-2D_bdr_vertices.dat
-42-cylinder_elements.dat
-42-cylinder_vertices.dat
-42-cylinder_verts_by_elems.dat
-
-
-	vector <string> cases_to_run 
-	{"11", "13", "24", "35", "41"};
-	    
-	for (auto c: cases_to_run)
-	    for (auto& file: magicliterals::files)
-    	    system
-    	    (
-    	        "diff " +
-    	        magicliterals::pathcurr +
-    	        c +
-    	        file +
-    	        " " +
-    	        magicliterals::pathorig +
-    	        c +
-    	        file ;
-    	    );
