@@ -39,12 +39,10 @@ def quadr (z, t):
 
 ## end construction of points for layers ###########################
 
-def check_error_norms(file_name, tmp_file_name):
+def error_norm(file_name, tmp_file_name):
     file     = np.loadtxt(file_name, delimiter=",")
-    tmp_file = np.loadtxt(tmp_file, delimiter=",")
-    print("+++ ", file_name)
-    print("--- ", tmp_file_name)
-    print("max | u - u_0 | = ", np.abs(np.max(tmp_file - file)))
+    tmp_file = np.loadtxt(tmp_file_name, delimiter=",")
+    return np.abs(np.max(tmp_file - file))
     
 def draw_isolated_points(vertices_file, folder = "."):
     vertices_file = folder + "/" + vertices_file
@@ -278,7 +276,7 @@ def plot_separate(
     if isolated_points:
         isolated_points = np.loadtxt(isolated_points, delimiter=vert_delim)
         
-        mlab.points3d(
+        mlab.points3d (
             isolated_points[:,0],
             isolated_points[:,1],
             isolated_points[:,2], 
@@ -288,3 +286,16 @@ def plot_separate(
         )
 
     mlab.show()
+
+if __name__ == "__main__":
+    # TODO vectorize and sort to see the max error faster
+    print(f"sys.argv = {sys.argv}\n")
+
+    filevector = np.loadtxt (sys.argv[1], dtype=[('name', '<U50')])
+    filevectortmp = np.loadtxt (sys.argv[2], dtype=[('name', '<U50')])
+
+    for f in range(np.size(filevectortmp)):
+        norm = error_norm(filevector[f]['name'], filevectortmp[f]['name'])
+        if norm > 0:
+            print(f"{f}:: max | u - u_0 | = {norm}")
+    print()
