@@ -6,13 +6,6 @@ from typing import Tuple
 from mayavi import mlab
 
 
-BDR_NODES = "bdr_nodes.dat"
-TMP_BDR_NODES = "bdr_nodes.dat"
-ELEMENTS = "elements.dat"
-TMP_ELEMENTS = "elements.dat"
-NODES = "nodes.dat"
-TMP_NODES = "nodes.dat"
-
 """
     the following paragraph is not part of mesh_graphics. make_layers refers
     to the profile layers :)
@@ -46,18 +39,13 @@ def quadr (z, t):
 
 ## end construction of points for layers ###########################
 
-def check_error_norms (test_number):
-    file     = np.loadtxt("inner/case" + str(test_number) + "/result/"+BDR_NODES,
-                           delimiter=",")
-    tmp_file = np.loadtxt("tmp/" + str(test_number) + TMP_BDR_NODES, delimiter=",")
-    print(test_number, "BDR_NODES", np.max(file - tmp_file))
+def check_error_norms(file_name, tmp_file_name):
+    file     = np.loadtxt(file_name, delimiter=",")
+    tmp_file = np.loadtxt(tmp_file, delimiter=",")
+    print("+++ ", file_name)
+    print("--- ", tmp_file_name)
+    print("max | u - u_0 | = ", np.abs(np.max(tmp_file - file)))
     
-    file     = np.loadtxt("inner/case" + str(test_number) + "/result/" + NODES,
-                           delimiter=",")
-    tmp_file = np.loadtxt("tmp/" + str(test_number) + TMP_NODES, delimiter=",")
-    print(test_number, "NODES", np.max(file - tmp_file), "\n")
-
-
 def draw_isolated_points(vertices_file, folder = "."):
     vertices_file = folder + "/" + vertices_file
     vertices 	  = np.loadtxt(vertices_file, delimiter=",")
