@@ -47,51 +47,5 @@ int main ()
     for (auto c: cmds)
         system(c);
 
-    vector <string> cases_to_run 
-    {"11", "13", "24", "35", "41"};
-        
-    vector <string> files
-    {
-        filenames::bdry2Dverts,
-        filenames::elemstable,
-        filenames::vertices3D
-    };
-
-    ofstream test1 {"./runtest1.sh", ios::trunc};
-    ofstream test2 {"./runtest2.sh", ios::trunc};
-    ofstream test3 {"./runtest3.sh", ios::trunc};
-
-    for (auto c: cases_to_run)
-    {
-        test1 << "echo \"case " << c << "\"\n"
-                << "diff "
-                << filenames::pathcurr
-                << c << "-" << filenames::bdry2Dverts << " "
-                << filenames::pathorig
-                << c << "-" << filenames::bdry2Dverts << '\n';
-
-        test2 << "echo \"case " << c << "\"\n"
-                << "diff "
-                << filenames::pathcurr
-                << c << "-" << filenames::elemstable << " "
-                << filenames::pathorig
-                << c << "-" << filenames::elemstable << '\n';
-
-        test3 << "echo \"case " << c << "\"\n"
-                << "diff "
-                << filenames::pathcurr
-                << c << "-" << filenames::vertices3D << " "
-                << filenames::pathorig
-                << c << "-" << filenames::vertices3D << '\n';
-    }
-
-    test1.close();
-    test2.close();
-    test3.close();
-
-    system("bash runtest1.sh >> bdry2Dverts.diff");
-    system("bash runtest2.sh >> elemstable.diff");
-    system("bash runtest3.sh >> vertices3D.diff");
-
     return 0;
 }

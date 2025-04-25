@@ -1,8 +1,11 @@
 #!/usr/bin/bash
 
+make_cyl
+
 fname=run_cases
 std="c++20"
 
+clean
 echo "std=$std"
 c++ -std=$std $fname.cpp -I . -o $fname.o
 compresult=$?
@@ -10,9 +13,6 @@ echo "Compilation of $fname finished with return status $compresult"
 if [ $compresult -ne 0 ]; then
     exit
 fi
-
-compresult=$(make_cyl)
-echo $compresult
 
 ./$fname.o
 
